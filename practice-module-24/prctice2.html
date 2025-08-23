@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 24-02</title>
+</head>
+<body>
+    <header>
+        <h1>what is dom</h1>
+    </header>
+    <main>
+        <h1>full form of dom</h1>
+        <p>document object model</p>
+        <ul>
+            <li>use first document</li>
+            <li>then put dot</li>
+            <li>after dot getElementsByTagName</li>
+            <li>many more</li>
+        </ul>
+    </main>
+
+
+    <script>
+        const allListName = document.getElementsByTagName('li');
+        for(const li of allListName){
+            console.log(li.innerText)
+        }
+
+        const allHeading = document.getElementsByTagName('h1');
+        for(const heading of allHeading){
+            console.log(heading.innerText)
+        }
+    </script>
+</body>
+</html>

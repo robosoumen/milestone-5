@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-id-class</title>
+</head>
+<body>
+    <section>
+        <li class="foreign">papaya</li>
+        <li class="foreign">vat</li>
+        <li class="foreign">muri</li>
+    </section>
+    <section class="food">
+        <h1 id="food-title">foods i love</h1>
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li id="band">guava</li>
+            <li>bedona</li>
+            <li>kola</li>
+            <li class="foreign">lichu</li>
+            <li class="foreign">angur</li>
+            <li class="foreign">vutta</li>
+        </ul>
+    </section>
+
+    <script>
+        const foodH1 = document.getElementById('food-title');
+       console.log(foodH1.innerText)
+       foodH1.innerText ='hello fruits';
+
+       const bandElement = document.getElementById('band');
+       bandElement.innerText
+
+       //by class name
+       const foreignElements = document.getElementsByClassName('foreign');
+       console.log(foreignElements);
+
+       for(const element of foreignElements){
+        console.log(element.innerText)
+       }
+    </script>
+</body>
+</html>

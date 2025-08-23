@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of dom</title>
+</head>
+<body>
+   <header>
+     <h1>introduction to dom</h1>
+   </header>
+   <main>
+    <h1>welcome to my dom</h1>
+    <ul>
+        <li>why dom used</li>
+        <li>main understanding dom</li>
+        <li>all topics</li>
+        <li>syntax</li>
+        <li>dom de </li>
+    </ul>
+   </main>
+
+   <script>
+        // console.log('hello from javascript')
+        const student = {
+            name:'abul mia',
+            id:222,
+            study: function (subject){
+                console.log('studying subject is :',subject)
+            }
+        }
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText)
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const head of allHeadings){
+            console.log(head.innerText)
+        }
+   </script>
+   <script src="js/hello.js"></script>
+</body>
+</html>
